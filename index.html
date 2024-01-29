@@ -37,7 +37,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h1>Away Team wins!</h1>
-                            <button type="button" class="btn btn-danger fs-1 px-5 m-5" onclick="reset()">Reset</button>
+                            <button type="button" class="btn btn-danger fs-1 px-5 m-5" onclick="game('',0)">Reset</button>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
    <header class="container-fluid">
         <div class="row justify-content-end">
             <div class="col-2">
-                <button type="button" class="btn btn-danger fs-1 px-5 m-5" onclick="reset()">Reset</button>
+                <button type="button" class="btn btn-danger fs-1 px-5 m-5" onclick="game('',0)">Reset</button>
             </div>
         </div>
    </header>
@@ -83,24 +83,24 @@
     <section class="container-fluid">
         <div class="row justify-content-evenly text-center">
             <div class="col-6">
-                <button type="button" class="btn btn-success fs-1 px-5 m-3" onclick="addOneHome()">Home +1</button>
+                <button type="button" class="btn btn-success fs-1 px-5 m-3" onclick="game('home', 1)">Home +1</button>
             </div>
             <div class="col-6">
-                <button type="button" class="btn btn-success fs-1 px-5 m-3" onclick="addOneAway()">Away +1</button>
+                <button type="button" class="btn btn-success fs-1 px-5 m-3" onclick="game('away', 1)">Away +1</button>
             </div>
             <div class="col-6">
-                <button type="button" class="btn btn-success fs-1 px-5 m-3" onclick="addThreeHome()">Home +3</button>
+                <button type="button" class="btn btn-success fs-1 px-5 m-3" onclick="game('home', 3)">Home +3</button>
             </div>
             <div class="col-6">
-                <button type="button" class="btn btn-success fs-1 px-5 m-3" onclick="addThreeAway()">Away +3</button>
+                <button type="button" class="btn btn-success fs-1 px-5 m-3" onclick="game('away', 3)">Away +3</button>
             </div>
             
             
             <div class="col-6">
-                <button type="button" class="btn btn-success fs-1 px-5 m-3" onclick="lessHome()">Home -1</button>
+                <button type="button" class="btn btn-success fs-1 px-5 m-3" onclick="game('home', -1)">Home -1</button>
             </div>
             <div class="col-6">
-                <button type="button" class="btn btn-success fs-1 px-5 m-3" onclick="lessAway()">Away -1</button>
+                <button type="button" class="btn btn-success fs-1 px-5 m-3" onclick="game('away', -1)">Away -1</button>
             </div>
             
         </div>
