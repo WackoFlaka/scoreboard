@@ -47,7 +47,7 @@ function game(team, num) {
    }
    
    // NOTE resets the game
-   if(team == null || num == 0) {
+   if(team == 'reset') {
     document.getElementById("background").style.backgroundColor = "rgba(0, 0, 0, 0.411)"
     document.getElementById("background").style.pointerEvents = "visible";
     document.getElementById("background").style.opacity = "1"
@@ -62,3 +62,4 @@ function game(team, num) {
    }
    
 }
+
