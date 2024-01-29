@@ -27,6 +27,7 @@ function addOneAway() {
     away += 1
     awayTotal = document.getElementById('away')
     awayTotal.innerHTML = away
+    
     winGame()
 }
 
@@ -43,12 +44,24 @@ function lessHome() {
     home -= 1 
     homeTotal = document.getElementById('home')
     homeTotal.innerHTML = home
+    
+    if(home < 0 ) {
+        home = 0
+        homeTotal = document.getElementById('home')
+        homeTotal.innerHTML = home
+    }
 }
 
 function lessAway() {
     away -= 1
     awayTotal = document.getElementById('away')
     awayTotal.innerHTML = away
+    
+    if(away < 0) {
+        away = 0
+        awayTotal = document.getElementById('home')
+        awayTotal.innerHTML = away
+    }
 }
 
 
